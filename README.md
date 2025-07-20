@@ -6,7 +6,7 @@
 
 A Stateful AI Assistant is the central conversational service that:
 
-1. **Creates a dedicated working context for each incident** (keyed by `incident_id`) and stores it in a live scratch‑pad, preserving every chat turn, clarifying question, planner thought, and confidence score until the incident is resolved or escalated.
+1. **Creates a dedicated working context for each incident** (keyed by `converstion threadId`) and stores it in a live scratch‑pad, preserving every chat turn, clarifying question, planner thought, and confidence score until the incident is resolved or escalated.
 2. **Runs a multi‑step reasoning loop** — **Fetch → RAG → Reason → Generate → Critique → Present**
 
    * **RAG** uses a **Sentence‑Transformer + Chroma** vector store to surface the most relevant past RCAs and fixes.
